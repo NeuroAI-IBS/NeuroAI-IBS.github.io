@@ -1,0 +1,69 @@
+baseURL = "https://ibs-neuroai-lab.github.io/"
+languageCode = "en-us"
+title = "IBS NeuroAI Lab"
+theme = "hugo-coder"
+
+[params]
+  author = "IBS NeuroAI Lab"
+  description = "Institute for Basic Science - NeuroAI Lab"
+  keywords = "neuroscience,AI,machine learning,computational neuroscience,IBS"
+  info = "Computational Neuroscience & Artificial Intelligence"
+  avatarURL = "images/logo.png"
+  dateFormat = "January 2, 2006"
+  hideFooter = false
+  hideCredits = false
+  hideCopyright = false
+  since = 2024
+  enableTwemoji = false
+  colorScheme = "auto"
+  hideColorSchemeToggle = false
+  customCSS = []
+  customSCSS = []
+  customJS = []
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/ibs-neuroai-lab"
+
+[[params.social]]
+  name = "Email"
+  icon = "fa-solid fa-envelope fa-2x"
+  weight = 2
+  url = "mailto:contact@neuroai.ibs.re.kr"
+
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  url = "/"
+
+[[menu.main]]
+  name = "People"
+  weight = 2
+  url = "/people/"
+
+[[menu.main]]
+  name = "Research"
+  weight = 3
+  url = "/research/"
+
+[[menu.main]]
+  name = "Publications"
+  weight = 4
+  url = "/publication/"
+
+[[menu.main]]
+  name = "Opportunities"
+  weight = 5
+  url = "/opportunities/"
+
+[[menu.main]]
+  name = "Resources"
+  weight = 6
+  url = "/resources/"
