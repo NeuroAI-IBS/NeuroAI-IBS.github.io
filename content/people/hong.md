@@ -1,16 +1,17 @@
 +++
-title = "Dr. Hong"
+title = "Sungho Hong"
 description = "Principal Investigator"
 date = "2024-01-01"
+
 +++
 
-# Dr. Hong
+# Sungho Hong
 
 **Principal Investigator**
 
 ## About
 
-Dr. Hong is the Principal Investigator of the IBS NeuroAI Lab. Their research focuses on computational neuroscience and artificial intelligence.
+Dr. Sungho Hong is the Principal Investigator of the IBS NeuroAI Lab. Their research focuses on computational neuroscience and artificial intelligence.
 
 ## Research Interests
 

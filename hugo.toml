@@ -18,7 +18,7 @@ theme = "hugo-coder"
   colorScheme = "auto"
   hideColorSchemeToggle = false
   customCSS = []
-  customSCSS = []
+  customSCSS = ["scss/custom.scss"]
   customJS = []
 
 [taxonomies]
@@ -59,11 +59,11 @@ theme = "hugo-coder"
   url = "/publication/"
 
 [[menu.main]]
-  name = "Opportunities"
+  name = "Resources"
   weight = 5
-  url = "/opportunities/"
+  url = "/resources/"
 
 [[menu.main]]
-  name = "Resources"
+  name = "Opportunities"
   weight = 6
-  url = "/resources/"
+  url = "/opportunities/"

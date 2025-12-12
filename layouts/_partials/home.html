@@ -1,0 +1,13 @@
+<section class="container centered">
+  <div class="about">
+    {{ partialCached "home/avatar.html" . }}
+
+    {{ partialCached "home/author.html" . }}
+
+    <div class="about-content">
+      {{ .Content }}
+    </div>
+
+    {{ partialCached "home/social.html" . }}
+  </div>
+</section>

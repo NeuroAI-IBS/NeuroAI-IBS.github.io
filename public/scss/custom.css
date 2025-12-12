@@ -1,0 +1,12 @@
+.avatar img {
+  width: 40rem;
+  border-radius: 0; }
+  @media only screen and (max-width: 768px) {
+    .avatar img {
+      width: 34rem; } }
+.about-content {
+  text-align: justify;
+  max-width: 60rem;
+  margin: 2rem auto; }
+
+/*# sourceMappingURL=custom.css.map */

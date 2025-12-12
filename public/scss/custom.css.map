@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "custom.css",
+	"sourceRoot": "/Users/shhong/Documents/lab_homepage",
+	"sources": [
+		"assets/scss/custom.scss"
+	],
+	"sourcesContent": [
+		".avatar img {\n  width: 40rem;\n  border-radius: 0;\n\n  @media only screen and (max-width: 768px) {\n    width: 34rem;\n  }\n}\n\n.about-content {\n  text-align: justify;\n  max-width: 60rem;\n  margin: 2rem auto;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,OAAO,CAAC,GAAG,CAAC;EACV,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,CAAC,GAKjB;EAHC,MAAM,mCAJR;IAAA,AAAA,OAAO,CAAC,GAAG,CAAC;MAKR,KAAK,EAAE,KAAK,GAEf,EAAA;AAED,AAAA,cAAc,CAAC;EACb,UAAU,EAAE,OAAO;EACnB,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,SAAS,GAClB"
+}
