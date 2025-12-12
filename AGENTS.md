@@ -21,45 +21,36 @@ The agent MUST adhere to the following technological constraints and choices:
 | **Language** | English |
 | **Primary Content Format** | Markdown (`.md`) |
 
-## 3. Initial Project Tasks for ampcode
+## 3. Project Structure
 
-The agent should execute the following steps to initiate the project structure:
+The site uses **Hugo** with the **hugo-coder** theme. Key directories:
 
-### Task 3.1: Initialize Hugo Project
+| Directory | Purpose |
+|-----------|---------|
+| `/content/` | All page content (Markdown) |
+| `/content/people/` | Staff profiles |
+| `/content/publication/` | Publications |
+| `/content/research/` | Research projects |
+| `/content/opportunities/` | Open positions |
+| `/content/resources/` | Open-source code/datasets |
+| `/static/` | Images, PDFs, static assets |
+| `/themes/hugo-coder/` | Theme (git submodule) |
 
-1.  Initialize a new Hugo project in the root of this repository.
-2.  Choose a **modern, clean, and academic-friendly Hugo Theme**. The theme must support:
-    * Dedicated pages for **People, Publications, and Research Topics**.
-    * Easy integration of a **CV/Academic layout** for the main lab PI (Dr. Hong).
-    * **Responsive design** for mobile viewing.
-    * *Suggestion:* Consider themes like **Academic Theme (Wowchemy)** if compatible with a basic Hugo setup, or another clean, professional theme like **Clarity, Toha, or a dedicated lab theme.**
+## 4. Deployment
 
-### Task 3.2: Create Necessary Directory Structure
+- **Workflow:** `.github/workflows/hugo-deploy.yml`
+- **Trigger:** Push to `main` branch
+- **Target:** GitHub Pages
 
-Create the following standard Hugo directory structure, ensuring the required sub-sections for the lab are prepared:
+## 5. Change Log
 
-* `/content/` (For all page content)
-    * `/content/home/`
-    * `/content/people/` (Must be set up for staff profiles)
-    * `/content/publication/` (Must be set up for paper listings, ideally with `.bib` or similar data structure compatibility)
-    * `/content/research/` (For project descriptions)
-    * `/content/opportunities/` (For open positions)
-    * `/content/resources/` (For open-source code/datasets)
-* `/layouts/` (For custom templates, if the theme requires it)
-* `/static/` (For images, PDFs, etc.)
-* `/themes/` (The chosen theme)
+See [CHANGES.md](CHANGES.md) for completed tasks and project history.
 
-### Task 3.3: Configure Deployment Action
+## 6. Next Steps
 
-1.  Create the directory: `.github/workflows/`
-2.  Create a deployment YAML file (e.g., `hugo-deploy.yml`) inside it.
-3.  The workflow must be configured to run on every `push` to the `main` branch and use a standard **Hugo Deploy Action** to generate and deploy the static files to the `gh-pages` branch for GitHub Pages hosting.
-
-### Task 3.4: Create Initial Placeholder Content
-
-Create placeholder files in the respective directories:
-
-* `content/home/_index.md` (Main landing page content)
-* `content/people/hong.md` (Dr. Hong's profile placeholder)
-* `content/opportunities/open-positions.md` (Placeholder for open positions)
-* `content/resources/_index.md` (Placeholder for open resources)
+- [ ] Add lab logo to `/static/images/logo.png`
+- [ ] Fill in Dr. Hong's profile details
+- [ ] Add team member profiles
+- [ ] Add publications
+- [ ] Add research project descriptions
+- [ ] Customize theme styling if needed
