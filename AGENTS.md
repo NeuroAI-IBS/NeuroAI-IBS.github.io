@@ -21,7 +21,11 @@ The agent MUST adhere to the following technological constraints and choices:
 | **Language** | English |
 | **Primary Content Format** | Markdown (`.md`) |
 
-## 3. Project Structure
+## 3. Quick Reference
+
+**IMPORTANT:** Before performing any common task (menu changes, adding people, publications, etc.), first check [docs/QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md) for step-by-step instructions.
+
+## 4. Project Structure
 
 The site uses **Hugo** with the **hugo-coder** theme. Key directories:
 
@@ -36,21 +40,16 @@ The site uses **Hugo** with the **hugo-coder** theme. Key directories:
 | `/static/` | Images, PDFs, static assets |
 | `/themes/hugo-coder/` | Theme (git submodule) |
 
-## 4. Deployment
+## 5. Deployment
 
 - **Workflow:** `.github/workflows/hugo-deploy.yml`
 - **Trigger:** Push to `main` branch
 - **Target:** GitHub Pages
 
-## 5. Change Log
+## 6. Change Log
 
 See [CHANGES.md](CHANGES.md) for completed tasks and project history.
 
-## 6. Next Steps
+## 7. Next Steps
 
-- [ ] Add lab logo to `/static/images/logo.png`
-- [ ] Fill in Dr. Hong's profile details
-- [ ] Add team member profiles
-- [ ] Add publications
-- [ ] Add research project descriptions
-- [ ] Customize theme styling if needed
+See [TODO.md](TODO.md) for pending tasks.

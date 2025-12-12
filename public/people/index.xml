@@ -6,14 +6,20 @@
     <description>Recent content in People on IBS NeuroAI Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/people/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Oliver James</title>
+      <link>http://localhost:1313/people/oliver_james/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/oliver_james/</guid>
+      <description>&lt;p&gt;&lt;em&gt;[Add description here]&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Sungho Hong</title>
-      <link>http://localhost:1313/people/hong/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/people/hong/</guid>
-      <description>&lt;h1 id=&#34;sungho-hong&#34;&gt;&#xA;  Sungho Hong&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#sungho-hong&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Principal Investigator&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;about&#34;&gt;&#xA;  About&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Dr. Sungho Hong is the Principal Investigator of the IBS NeuroAI Lab. Their research focuses on computational neuroscience and artificial intelligence.&lt;/p&gt;&#xA;&lt;h2 id=&#34;research-interests&#34;&gt;&#xA;  Research Interests&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#research-interests&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Computational Neuroscience&lt;/li&gt;&#xA;&lt;li&gt;Machine Learning&lt;/li&gt;&#xA;&lt;li&gt;Neural Network Dynamics&lt;/li&gt;&#xA;&lt;li&gt;Brain-Inspired AI&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;&#xA;  Education&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#education&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Details to be added&lt;/em&gt;&lt;/p&gt;</description>
+      <link>http://localhost:1313/people/sungho_hong/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/sungho_hong/</guid>
+      <description>&lt;p&gt;Sungho Hong is the Principal Investigator of the IBS NeuroAI Lab. His research focuses on computational neuroscience and artificial intelligence, investigating the computational principles underlying neural systems and bridging neuroscience and machine learning.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;[Edit this description]&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

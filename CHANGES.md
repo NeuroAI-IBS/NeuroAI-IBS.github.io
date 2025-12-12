@@ -62,7 +62,7 @@ Created `.github/workflows/hugo-deploy.yml` with:
 Created placeholder files:
 - `content/_index.md` - Main landing page with lab introduction
 - `content/people/_index.md` - People section index
-- `content/people/hong.md` - Dr. Hong's profile placeholder
+- `content/people/sungho_hong.md` - Dr. Hong's profile
 - `content/publication/_index.md` - Publications page
 - `content/research/_index.md` - Research topics page
 - `content/opportunities/_index.md` - Open positions page
@@ -78,11 +78,21 @@ Created placeholder files:
 | `.github/workflows/hugo-deploy.yml` | GitHub Actions deployment workflow |
 | `content/_index.md` | Homepage content |
 | `content/people/_index.md` | People section index |
-| `content/people/hong.md` | PI profile placeholder |
+| `content/people/sungho_hong.md` | PI profile |
 | `content/publication/_index.md` | Publications page |
 | `content/research/_index.md` | Research page |
 | `content/opportunities/_index.md` | Opportunities page |
 | `content/resources/_index.md` | Resources page |
 
 ---
+
+## Content Updates
+
+### Lab Logo ✅
+
+Added lab logo to `/static/images/logo.png`.
+
+### Dr. Hong's Profile ✅
+
+Filled in Dr. Hong's profile details in `content/people/sungho_hong.md`.
 
