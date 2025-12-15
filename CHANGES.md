@@ -1,6 +1,6 @@
 # CHANGES.md: Project Setup Log
 
-This file documents the completed tasks and changes made to the IBS NeuroAI Lab website.
+This file documents the completed tasks and changes made to the IBS NeuroAI Group website.
 
 ---
 
@@ -16,9 +16,9 @@ This file documents the completed tasks and changes made to the IBS NeuroAI Lab 
    git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
    ```
 3. Configured `hugo.toml` with:
-   - Site title: "IBS NeuroAI Lab"
+   - Site title: "IBS NeuroAI Group"
    - Base URL: `https://ibs-neuroai-lab.github.io/`
-   - Navigation menu (Home, People, Research, Publications, Opportunities, Resources)
+   - Navigation menu (Home, People, Research, Publications, Open Positions, Resources)
    - Social links (GitHub, Email)
 
 **Theme Choice:** hugo-coder - A clean, minimalist, responsive theme suitable for academic/professional sites.
@@ -81,7 +81,7 @@ Created placeholder files:
 | `content/people/sungho_hong.md` | PI profile |
 | `content/publication/_index.md` | Publications page |
 | `content/research/_index.md` | Research page |
-| `content/opportunities/_index.md` | Opportunities page |
+| `content/opportunities/_index.md` | Open Positions page |
 | `content/resources/_index.md` | Resources page |
 
 ---
@@ -95,4 +95,13 @@ Added lab logo to `/static/images/logo.png`.
 ### Dr. Hong's Profile ✅
 
 Filled in Dr. Hong's profile details in `content/people/sungho_hong.md`.
+
+### Team Member Profiles ✅
+
+Added team member profiles:
+- `content/people/oliver_james.md` - Oliver James
+
+### IBS Logo in Header ✅
+
+Added IBS logo to `/static/images/ibs_logo.gif` and configured it in the site header.
 

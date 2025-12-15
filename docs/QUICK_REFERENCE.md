@@ -1,6 +1,6 @@
 # Quick Reference
 
-This document provides quick instructions for common tasks on the IBS NeuroAI Lab website.
+This document provides quick instructions for common tasks on the IBS NeuroAI Group website.
 
 ---
 
@@ -26,7 +26,7 @@ Menu items are configured in `hugo.toml` under `[[menu.main]]` entries.
 | 3 | Research | /research/ |
 | 4 | Publications | /publication/ |
 | 5 | Resources | /resources/ |
-| 6 | Opportunities | /opportunities/ |
+| 6 | Open Positions | /opportunities/ |
 
 ### How to Change
 
@@ -34,11 +34,11 @@ Menu items are configured in `hugo.toml` under `[[menu.main]]` entries.
 2. **Change order:** Edit the `weight` field (lower = earlier in menu)
 3. **Add new item:** Add a new `[[menu.main]]` block with name, weight, and url
 
-### Example: Swap Resources and Opportunities
+### Example: Swap Resources and Open Positions
 
 ```toml
 [[menu.main]]
-  name = "Opportunities"
+  name = "Open Positions"
   weight = 5
   url = "/opportunities/"
 
@@ -71,7 +71,11 @@ twitter = "https://twitter.com/..."
 Description text here.
 ```
 
-Add photos to `static/images/people/`.
+### Adding Photos
+
+1. Place photo in `static/images/people/` (e.g., `static/images/people/firstname_lastname.jpg`)
+2. Set the `photo` field in the front matter to match: `photo = "images/people/firstname_lastname.jpg"`
+3. Recommended: Use square images (e.g., 400x400px) for consistent display
 
 ---
 

@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] Add team member profiles
+- [x] Add team member profiles
 - [ ] Add publications
 - [ ] Add research project descriptions
-- [ ] Customize theme styling if needed
+- [x] Add the ibs logo to the header

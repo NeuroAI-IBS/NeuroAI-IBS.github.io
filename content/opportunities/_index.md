@@ -1,9 +1,9 @@
 +++
-title = "Opportunities"
+title = "Open Positions"
 description = "Join our lab"
 +++
 
-# Opportunities
+# Open Positions
 
 We are always looking for talented and motivated individuals to join our team!
 

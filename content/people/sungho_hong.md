@@ -9,9 +9,8 @@ scholar = "https://scholar.google.com/citations?user=XXXXX"
 github = "https://github.com/shhong"
 linkedin = ""
 twitter = ""
-
 +++
 
-Sungho Hong is the Principal Investigator of the IBS NeuroAI Lab. His research focuses on computational neuroscience and artificial intelligence, investigating the computational principles underlying neural systems and bridging neuroscience and machine learning.
+Sungho Hong is the Principal Investigator of the IBS NeuroAI Group. His research focuses on computational neuroscience and artificial intelligence, investigating the computational principles underlying neural systems and bridging neuroscience and machine learning.
 
 *[Edit this description]*

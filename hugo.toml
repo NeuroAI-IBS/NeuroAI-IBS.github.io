@@ -1,11 +1,11 @@
 baseURL = "https://ibs-neuroai-lab.github.io/"
 languageCode = "en-us"
-title = "IBS NeuroAI Lab"
+title = "IBS NeuroAI Group"
 theme = "hugo-coder"
 
 [params]
-  author = "IBS NeuroAI Lab"
-  description = "Institute for Basic Science - NeuroAI Lab"
+  author = "IBS NeuroAI Group"
+  description = "Institute for Basic Science - NeuroAI Group"
   keywords = "neuroscience,AI,machine learning,computational neuroscience,IBS"
   info = "Computational Neuroscience & Artificial Intelligence"
   avatarURL = "images/logo.png"

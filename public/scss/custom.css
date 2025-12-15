@@ -1,3 +1,19 @@
+.top-banner {
+  background-color: white;
+  height: 4.5rem;
+  display: flex;
+  align-items: center; }
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+.banner-logo {
+  height: 3rem;
+  width: auto; }
+
 .avatar img {
   width: 40rem;
   border-radius: 0; }

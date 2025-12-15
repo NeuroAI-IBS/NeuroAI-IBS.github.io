@@ -4,7 +4,7 @@ This file serves as the primary configuration and context guide for the 'ampcode
 
 ## 1. Project Overview
 
-* **Project Name:** IBS NeuroAI Lab Homepage
+* **Project Name:** IBS NeuroAI Group Homepage
 * **Organization:** ibs-neuroai-lab (Institute for Basic Science)
 * **Purpose:** A professional, easy-to-maintain, and highly scalable static website to showcase the lab's research, people, publications, and open resources.
 * **Target Audience:** Prospective students/staff (most important), collaborators, funding agencies, and the general scientific community.
