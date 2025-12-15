@@ -111,14 +111,18 @@ a {
   // Default (unhovered) link color
   color: $link-base-light;
 
-  &:hover,
-  &:focus,
-  &:active {
+  // Only hover is highlighted
+  &:hover {
     color: $link-highlight;
   }
 
   &:visited {
-    color: $link-highlight;
+    color: $link-base-light;
+  }
+
+  &:focus,
+  &:active {
+    color: $link-base-light;
   }
 }
 
@@ -135,30 +139,39 @@ h3 .heading-link,
 h4 .heading-link,
 h5 .heading-link,
 h6 .heading-link,
-.navigation a:hover,
-.navigation a:focus,
-.content .list ul li .title:hover,
-.content .list ul li .title:focus,
-.centered .about ul li a:hover,
-.centered .about ul li a:focus,
-.content .post .post-meta .tags .tag a:active,
-.taxonomy .taxonomy-element a:active,
-.float-container a:hover,
-.float-container a:focus {
+.title-link,
+.navigation a:visited,
+.footer a:visited,
+.float-container a:visited,
+.person-social li a:visited,
+.content .post .post-meta .tags .tag a:visited,
+.taxonomy .taxonomy-element a:visited {
   color: $link-base-light;
 }
 
-// Keep highlight on interaction states (and specific :active states)
+// Keep highlight only on hover (not focus/active)
 .navigation a:hover,
-.navigation a:focus,
 .content .list ul li .title:hover,
-.content .list ul li .title:focus,
 .centered .about ul li a:hover,
-.centered .about ul li a:focus,
-.float-container a:hover,
-.float-container a:focus,
-.content .post .post-meta .tags .tag a:active,
-.taxonomy .taxonomy-element a:active {
+.float-container a:hover {
+  color: $link-highlight;
+}
+
+// Titles are always highlight color (including visited)
+.navigation-title,
+.title-link,
+.navigation-title:visited,
+.title-link:visited {
+  color: $link-highlight;
+}
+
+// Section list page titles (e.g., People uses <h1 class="title">People</h1> with no link)
+.content .list header .title {
+  color: $link-highlight;
+}
+
+.content .list header .title a,
+.content .list header .title a:visited {
   color: $link-highlight;
 }
 
@@ -177,11 +190,14 @@ body.colorscheme-dark {
     // In dark mode, avoid black-on-dark; also remove theme’s blue by inheriting text color.
     color: inherit;
 
-    &:hover,
-    &:focus,
-    &:active,
-    &:visited {
+    &:hover {
       color: $link-highlight;
+    }
+
+    &:visited,
+    &:focus,
+    &:active {
+      color: inherit;
     }
   }
 
@@ -197,29 +213,36 @@ body.colorscheme-dark {
   h4 .heading-link,
   h5 .heading-link,
   h6 .heading-link,
-  .navigation a:hover,
-  .navigation a:focus,
-  .content .list ul li .title:hover,
-  .content .list ul li .title:focus,
-  .centered .about ul li a:hover,
-  .centered .about ul li a:focus,
-  .content .post .post-meta .tags .tag a:active,
-  .taxonomy .taxonomy-element a:active,
-  .float-container a:hover,
-  .float-container a:focus {
+  .title-link,
+  .navigation a:visited,
+  .footer a:visited,
+  .float-container a:visited,
+  .person-social li a:visited,
+  .content .post .post-meta .tags .tag a:visited,
+  .taxonomy .taxonomy-element a:visited {
     color: inherit;
   }
 
+  .navigation-title,
+  .title-link,
+  .navigation-title:visited,
+  .title-link:visited {
+    color: $link-highlight;
+  }
+
+  .content .list header .title {
+    color: $link-highlight;
+  }
+
+  .content .list header .title a,
+  .content .list header .title a:visited {
+    color: $link-highlight;
+  }
+
   .navigation a:hover,
-  .navigation a:focus,
   .content .list ul li .title:hover,
-  .content .list ul li .title:focus,
   .centered .about ul li a:hover,
-  .centered .about ul li a:focus,
-  .float-container a:hover,
-  .float-container a:focus,
-  .content .post .post-meta .tags .tag a:active,
-  .taxonomy .taxonomy-element a:active {
+  .float-container a:hover {
     color: $link-highlight;
   }
 }
@@ -231,11 +254,14 @@ body.colorscheme-dark {
       // In dark mode, avoid black-on-dark; also remove theme’s blue by inheriting text color.
       color: inherit;
 
-      &:hover,
-      &:focus,
-      &:active,
-      &:visited {
+      &:hover {
         color: $link-highlight;
+      }
+
+      &:visited,
+      &:focus,
+      &:active {
+        color: inherit;
       }
     }
 
@@ -251,29 +277,36 @@ body.colorscheme-dark {
     h4 .heading-link,
     h5 .heading-link,
     h6 .heading-link,
-    .navigation a:hover,
-    .navigation a:focus,
-    .content .list ul li .title:hover,
-    .content .list ul li .title:focus,
-    .centered .about ul li a:hover,
-    .centered .about ul li a:focus,
-    .content .post .post-meta .tags .tag a:active,
-    .taxonomy .taxonomy-element a:active,
-    .float-container a:hover,
-    .float-container a:focus {
+    .title-link,
+    .navigation a:visited,
+    .footer a:visited,
+    .float-container a:visited,
+    .person-social li a:visited,
+    .content .post .post-meta .tags .tag a:visited,
+    .taxonomy .taxonomy-element a:visited {
       color: inherit;
     }
 
+    .navigation-title,
+    .title-link,
+    .navigation-title:visited,
+    .title-link:visited {
+      color: $link-highlight;
+    }
+
+    .content .list header .title {
+      color: $link-highlight;
+    }
+
+    .content .list header .title a,
+    .content .list header .title a:visited {
+      color: $link-highlight;
+    }
+
     .navigation a:hover,
-    .navigation a:focus,
     .content .list ul li .title:hover,
-    .content .list ul li .title:focus,
     .centered .about ul li a:hover,
-    .centered .about ul li a:focus,
-    .float-container a:hover,
-    .float-container a:focus,
-    .content .post .post-meta .tags .tag a:active,
-    .taxonomy .taxonomy-element a:active {
+    .float-container a:hover {
       color: $link-highlight;
     }
   }
