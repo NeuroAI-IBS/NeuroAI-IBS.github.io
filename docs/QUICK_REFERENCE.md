@@ -88,3 +88,43 @@ Add markdown files to `content/publication/`.
 ## Adding Research Projects
 
 Add markdown files to `content/research/`.
+
+---
+
+## Styling: Line Height & Paragraph Spacing
+
+Custom styles are in `assets/scss/custom.scss`.
+
+### Line Height
+
+Add to your target selector:
+
+```scss
+.content {
+  line-height: 1.8;  // Default is usually 1.5-1.6
+}
+```
+
+### Paragraph Spacing
+
+Control margin between paragraphs:
+
+```scss
+.content p {
+  margin-bottom: 1.5rem;  // Increase for more space
+}
+```
+
+### Example: Adjust About Section
+
+```scss
+.about-content {
+  line-height: 1.8;
+  
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+```
+
+After changes, rebuild with `hugo server` to preview.

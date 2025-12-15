@@ -1,20 +1,15 @@
 +++
 title = "Resources"
-description = "Open-source code, datasets, and tools"
+description = "Open-source code and tools"
 +++
 
-# Resources
-
-We believe in open science. Here you will find our open-source code, datasets, and tools.
+We believe in open science. Here you will find our open-source code and materials for our courses.
 
 ## Code & Software
 
 *Coming soon*
 
-## Datasets
+## Course materials
 
-*Coming soon*
-
-## Tutorials
 
 *Coming soon*
