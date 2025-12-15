@@ -96,3 +96,186 @@
   }
 }
 
+.list .alumni-list ul {
+  list-style: disc !important;
+  padding-left: 2rem !important;
+}
+
+// Link highlight overrides (hover/click/visited)
+// Requested highlight color: rgb(182,66,38)
+$link-highlight: rgb(182, 66, 38);
+$link-base-light: #000;
+
+// Base (site-wide) link interaction/visited states
+a {
+  // Default (unhovered) link color
+  color: $link-base-light;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $link-highlight;
+  }
+
+  &:visited {
+    color: $link-highlight;
+  }
+}
+
+// Theme-specific higher-specificity selectors that otherwise override the base rules
+.navigation a,
+.footer a,
+.float-container a,
+.person-social li a,
+.content .post .post-meta .tags .tag a,
+.taxonomy .taxonomy-element a,
+h1 .heading-link,
+h2 .heading-link,
+h3 .heading-link,
+h4 .heading-link,
+h5 .heading-link,
+h6 .heading-link,
+.navigation a:hover,
+.navigation a:focus,
+.content .list ul li .title:hover,
+.content .list ul li .title:focus,
+.centered .about ul li a:hover,
+.centered .about ul li a:focus,
+.content .post .post-meta .tags .tag a:active,
+.taxonomy .taxonomy-element a:active,
+.float-container a:hover,
+.float-container a:focus {
+  color: $link-base-light;
+}
+
+// Keep highlight on interaction states (and specific :active states)
+.navigation a:hover,
+.navigation a:focus,
+.content .list ul li .title:hover,
+.content .list ul li .title:focus,
+.centered .about ul li a:hover,
+.centered .about ul li a:focus,
+.float-container a:hover,
+.float-container a:focus,
+.content .post .post-meta .tags .tag a:active,
+.taxonomy .taxonomy-element a:active {
+  color: $link-highlight;
+}
+
+// Preserve theme behavior for floating button hover on small screens
+@media only screen and (max-width: 768px) {
+  .float-container a:hover,
+  .float-container a:focus {
+    color: inherit;
+    opacity: 0.5;
+  }
+}
+
+// Dark scheme (explicit)
+body.colorscheme-dark {
+  a {
+    // In dark mode, avoid black-on-dark; also remove theme’s blue by inheriting text color.
+    color: inherit;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      color: $link-highlight;
+    }
+  }
+
+  .navigation a,
+  .footer a,
+  .float-container a,
+  .person-social li a,
+  .content .post .post-meta .tags .tag a,
+  .taxonomy .taxonomy-element a,
+  h1 .heading-link,
+  h2 .heading-link,
+  h3 .heading-link,
+  h4 .heading-link,
+  h5 .heading-link,
+  h6 .heading-link,
+  .navigation a:hover,
+  .navigation a:focus,
+  .content .list ul li .title:hover,
+  .content .list ul li .title:focus,
+  .centered .about ul li a:hover,
+  .centered .about ul li a:focus,
+  .content .post .post-meta .tags .tag a:active,
+  .taxonomy .taxonomy-element a:active,
+  .float-container a:hover,
+  .float-container a:focus {
+    color: inherit;
+  }
+
+  .navigation a:hover,
+  .navigation a:focus,
+  .content .list ul li .title:hover,
+  .content .list ul li .title:focus,
+  .centered .about ul li a:hover,
+  .centered .about ul li a:focus,
+  .float-container a:hover,
+  .float-container a:focus,
+  .content .post .post-meta .tags .tag a:active,
+  .taxonomy .taxonomy-element a:active {
+    color: $link-highlight;
+  }
+}
+
+// Auto scheme (dark via media query)
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto {
+    a {
+      // In dark mode, avoid black-on-dark; also remove theme’s blue by inheriting text color.
+      color: inherit;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:visited {
+        color: $link-highlight;
+      }
+    }
+
+    .navigation a,
+    .footer a,
+    .float-container a,
+    .person-social li a,
+    .content .post .post-meta .tags .tag a,
+    .taxonomy .taxonomy-element a,
+    h1 .heading-link,
+    h2 .heading-link,
+    h3 .heading-link,
+    h4 .heading-link,
+    h5 .heading-link,
+    h6 .heading-link,
+    .navigation a:hover,
+    .navigation a:focus,
+    .content .list ul li .title:hover,
+    .content .list ul li .title:focus,
+    .centered .about ul li a:hover,
+    .centered .about ul li a:focus,
+    .content .post .post-meta .tags .tag a:active,
+    .taxonomy .taxonomy-element a:active,
+    .float-container a:hover,
+    .float-container a:focus {
+      color: inherit;
+    }
+
+    .navigation a:hover,
+    .navigation a:focus,
+    .content .list ul li .title:hover,
+    .content .list ul li .title:focus,
+    .centered .about ul li a:hover,
+    .centered .about ul li a:focus,
+    .float-container a:hover,
+    .float-container a:focus,
+    .content .post .post-meta .tags .tag a:active,
+    .taxonomy .taxonomy-element a:active {
+      color: $link-highlight;
+    }
+  }
+}
+
