@@ -9,7 +9,7 @@
 
   {{ $pi := where $people "Params.role" "pi" }}
   {{ if $pi }}
-  <h2>Principal Investigator</h2>
+  <h2 id="principal-investigator">Principal Investigator</h2>
   {{ range $pi }}
   {{ partial "people/card.html" . }}
   {{ end }}
@@ -31,12 +31,12 @@
   {{ end }}
   {{ end }}
 
-  {{ $alumni := where $people "Params.role" "alumni" }}
+  {{ $alumni := .GetPage "alumni" }}
   {{ if $alumni }}
   <h2>Alumni</h2>
-  {{ range $alumni }}
-  {{ partial "people/card.html" . }}
-  {{ end }}
+  <div class="alumni-list">
+    {{ $alumni.Content }}
+  </div>
   {{ end }}
 
 </section>

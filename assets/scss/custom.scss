@@ -5,21 +5,53 @@
   align-items: center;
 }
 
+.navigation {
+  background-color: rgb(215, 215, 215);
+  height: 6.4rem;
+}
+
+.colorscheme-dark .navigation,
+.colorscheme-auto .navigation {
+  background-color: rgb(215, 215, 215);
+}
+
+@media only screen and (min-width: 769px) {
+  .navigation .navigation-title,
+  .navigation .navigation-list .navigation-item a,
+  .navigation .navigation-list .navigation-item span {
+    line-height: 4.5rem;
+  }
+}
+
 .banner-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  gap: 3rem;
 }
 
 .banner-logo {
-  height: 3rem;
+  height: 3.5rem;
   width: auto;
 }
 
+.banner-logo-center {
+  height: 4.5rem; // Larger size for the center logo
+  margin-top: 0.75rem; // Slightly lower position relative to IBS logo
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30rem;
+}
+
 .avatar img {
-  width: 40rem;
+  width: 60rem;
   border-radius: 0;
+  margin-bottom: 2rem;
 
   @media only screen and (max-width: 768px) {
     width: 34rem;
@@ -102,7 +134,7 @@
 }
 
 // Link highlight overrides (hover/click/visited)
-// Requested highlight color: rgb(182,66,38)
+// Requested highlight color: rgb(188,76,62)
 $link-highlight: rgb(182, 66, 38);
 $link-base-light: #000;
 
@@ -110,6 +142,8 @@ $link-base-light: #000;
 a {
   // Default (unhovered) link color
   color: $link-base-light;
+  // Reduce hover animation delay (theme default is 0.25s)
+  transition: all 0.1s ease-in;
 
   // Only hover is highlighted
   &:hover {

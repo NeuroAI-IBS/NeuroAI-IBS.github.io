@@ -12,9 +12,11 @@ This file documents the completed tasks and changes made to the IBS NeuroAI Grou
 
 1. Initialized Hugo project using `hugo new site . --force`
 2. Installed **hugo-coder** theme as a git submodule:
+
    ```bash
    git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
    ```
+
 3. Configured `hugo.toml` with:
    - Site title: "IBS NeuroAI Group"
    - Base URL: `https://ibs-neuroai-lab.github.io/`
@@ -30,6 +32,7 @@ This file documents the completed tasks and changes made to the IBS NeuroAI Grou
 **Status:** Completed
 
 Created the following directories:
+
 - `/content/` - All page content
   - `/content/home/`
   - `/content/people/` - Staff profiles
@@ -48,6 +51,7 @@ Created the following directories:
 **Status:** Completed
 
 Created `.github/workflows/hugo-deploy.yml` with:
+
 - Trigger: Push to `main` branch
 - Hugo version: 0.140.0 (extended)
 - Uses GitHub Pages deployment via `actions/deploy-pages@v4`
@@ -60,6 +64,7 @@ Created `.github/workflows/hugo-deploy.yml` with:
 **Status:** Completed
 
 Created placeholder files:
+
 - `content/_index.md` - Main landing page with lab introduction
 - `content/people/_index.md` - People section index
 - `content/people/sungho_hong.md` - Dr. Hong's profile
@@ -99,9 +104,17 @@ Filled in Dr. Hong's profile details in `content/people/sungho_hong.md`.
 ### Team Member Profiles ✅
 
 Added team member profiles:
+
 - `content/people/oliver_james.md` - Oliver James
 
 ### IBS Logo in Header ✅
 
 Added IBS logo to `/static/images/ibs_logo.gif` and configured it in the site header.
 
+---
+
+## Banner & Documentation Refresh (Dec 2025) ✅
+
+1. Replaced the broken center logo with `static/images/logo_w_CMG.png`, ensured it sits beside the IBS logo, enlarged it via a dedicated `.banner-logo-center` class, and tweaked spacing/offset so the two marks align.
+2. Updated the center logo hyperlink to point to `https://www.ibs.re.kr/ccs` (previously targeted an incorrect address).
+3. Added concise banner-maintenance guidance to `docs/QUICK_REFERENCE.md` so future updates to logo sizing/placement are straightforward.

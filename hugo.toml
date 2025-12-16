@@ -4,10 +4,10 @@ title = "IBS NeuroAI Group"
 theme = "hugo-coder"
 
 [params]
-  author = "IBS NeuroAI Group"
+  author = "Neuroscience-inspired AI Group at IBS"
   description = "Institute for Basic Science - NeuroAI Group"
   keywords = "neuroscience,AI,machine learning,computational neuroscience,IBS"
-  info = "Computational Neuroscience & Artificial Intelligence"
+  info = ""
   avatarURL = "images/logo.png"
   dateFormat = "January 2, 2006"
   hideFooter = false
@@ -37,11 +37,6 @@ theme = "hugo-coder"
   icon = "fa-solid fa-envelope fa-2x"
   weight = 2
   url = "mailto:contact@neuroai.ibs.re.kr"
-
-[[menu.main]]
-  name = "Home"
-  weight = 1
-  url = "/"
 
 [[menu.main]]
   name = "People"

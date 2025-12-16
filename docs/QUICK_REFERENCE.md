@@ -91,6 +91,18 @@ Add markdown files to `content/research/`.
 
 ---
 
+## Home Page Text & Hero Headers
+
+Update the main hero block (big heading + subtitle) via `hugo.toml` and the home markdown content.
+
+1. **Hero heading (`<h1>`):** Edit `[params] author` in `hugo.toml`.
+2. **Hero subtitle (`<h2>`):** Edit `[params] info` (string or array) in `hugo.toml`. Arrays render multiple stacked lines.
+3. **About paragraphs & extra headings:** Edit `content/_index.md`. Any Markdown you add here is inserted below the hero block.
+4. **Custom structure (optional):** Copy `themes/hugo-coder/layouts/_partials/home/author.html` to `layouts/_partials/home/author.html` to fully control the markup.
+5. Run `hugo server` to preview the new copy before deploying.
+
+---
+
 ## Styling: Line Height & Paragraph Spacing
 
 Custom styles are in `assets/scss/custom.scss`.
@@ -120,7 +132,7 @@ Control margin between paragraphs:
 ```scss
 .about-content {
   line-height: 1.8;
-  
+
   p {
     margin-bottom: 1.5rem;
   }
@@ -128,3 +140,86 @@ Control margin between paragraphs:
 ```
 
 After changes, rebuild with `hugo server` to preview.
+
+---
+
+## Updating Banner Logo Size
+
+Logos in the top banner use the `.banner-logo` class defined in `assets/scss/custom.scss`. Update its `height` to scale all banner logos uniformly while preserving aspect ratios:
+
+```scss
+.banner-logo {
+  height: 3.6rem;  // Increase/decrease this value as needed
+  width: auto;
+}
+```
+
+1. Edit `assets/scss/custom.scss` and change the `height` value.
+2. Run `hugo server` (or rebuild) to preview the updated size.
+
+### Center Logo Specific Tweaks
+
+- The center logo image is `static/images/logo_w_CMG.png`, referenced in `layouts/_partials/header.html`.
+- Its link target is `https://www.ibs.re.kr/ccs`. Update the `<a>` tag there if the destination changes.
+- Use the `.banner-logo-center` helper class when you need a different size or offset for the center logo only:
+
+```scss
+.banner-logo-center {
+  height: 4.5rem;
+  margin-top: 0.75rem; // low value to nudge it downward
+}
+```
+
+---
+
+## Home Page Logo Size (`logo.png`)
+
+The large logo on the home hero section uses the `.avatar img` selector in `assets/scss/custom.scss`.
+
+1. Locate `.avatar img` (near the top of the file).
+2. Adjust `width: 40rem;` (and the mobile override inside the media query). Set `height` instead if you prefer height-driven sizing and keep `width: auto;` for aspect ratio.
+3. Save and run `hugo server` to confirm the new scale.
+
+### Adjusting Logo Position
+
+If the logo appears too low (or too high), adjust its vertical position by adding styles to `.avatar` or `.avatar img` in `assets/scss/custom.scss`:
+
+```scss
+.avatar {
+  margin-top: -2rem;  // Negative values move it up, positive values move it down
+}
+
+// Or adjust the image itself:
+.avatar img {
+  margin-top: -1rem;  // Fine-tune positioning
+  // Alternative: use transform for precise control
+  // transform: translateY(-1rem);
+}
+```
+
+1. Edit `assets/scss/custom.scss` and add the `.avatar` or `.avatar img` positioning rules.
+2. Adjust the `margin-top` value (negative = up, positive = down) until the logo is positioned correctly.
+3. Run `hugo server` to preview the changes.
+
+---
+
+## Linking to Specific Sections
+
+Use anchored headings plus Hugo's `ref` shortcode to send visitors to an exact spot on a page.
+
+1. **Add an `id` to the target heading**
+   In Markdown, append `{#anchor-name}` to the heading (e.g., `## Principal Investigator {#principal-investigator}`).
+   In HTML templates, set the attribute directly:
+
+   ```html
+   <h2 id="principal-investigator">Principal Investigator</h2>
+   ```
+
+2. **Link to the anchored section**
+   Reference the page and anchor with `ref`, just like a normal internal link:
+
+   ```markdown
+   [PI]({{< ref "people/_index.md#principal-investigator" >}})
+   ```
+
+3. **Preview** with `hugo server` to confirm the jump scrolls to the intended section.

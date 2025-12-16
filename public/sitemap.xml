@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:50020/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:50020/</loc>
   </url><url>
-    <loc>http://localhost:1313/people/oliver_james/</loc>
+    <loc>http://localhost:50020/people/oliver_james/</loc>
   </url><url>
-    <loc>http://localhost:1313/opportunities/</loc>
+    <loc>http://localhost:50020/opportunities/</loc>
   </url><url>
-    <loc>http://localhost:1313/people/</loc>
+    <loc>http://localhost:50020/people/</loc>
   </url><url>
-    <loc>http://localhost:1313/publication/</loc>
+    <loc>http://localhost:50020/publication/</loc>
   </url><url>
-    <loc>http://localhost:1313/research/</loc>
+    <loc>http://localhost:50020/research/</loc>
   </url><url>
-    <loc>http://localhost:1313/resources/</loc>
+    <loc>http://localhost:50020/resources/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>http://localhost:50020/series/</loc>
   </url><url>
-    <loc>http://localhost:1313/people/sungho_hong/</loc>
+    <loc>http://localhost:50020/people/sungho_hong/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:50020/tags/</loc>
   </url>
 </urlset>
