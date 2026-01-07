@@ -1,24 +1,24 @@
 baseURL = "https://ibs-neuroai-lab.github.io/"
 languageCode = "en-us"
-title = "IBS NeuroAI Lab"
+title = "IBS NeuroAI Group"
 theme = "hugo-coder"
 
 [params]
-  author = "IBS NeuroAI Lab"
-  description = "Institute for Basic Science - NeuroAI Lab"
+  author = "Neuroscience-inspired AI Research Group"
+  description = "Institute for Basic Science - NeuroAI Group"
   keywords = "neuroscience,AI,machine learning,computational neuroscience,IBS"
-  info = "Computational Neuroscience & Artificial Intelligence"
+  info = "Center for Memory and Glioscience, Institute for Basic Science"
   avatarURL = "images/logo.png"
   dateFormat = "January 2, 2006"
   hideFooter = false
-  hideCredits = false
+  hideCredits = true
   hideCopyright = false
   since = 2024
   enableTwemoji = false
   colorScheme = "auto"
   hideColorSchemeToggle = false
   customCSS = []
-  customSCSS = []
+  customSCSS = ["scss/custom.scss"]
   customJS = []
 
 [taxonomies]
@@ -26,42 +26,25 @@ theme = "hugo-coder"
   series = "series"
   tag = "tags"
 
-[[params.social]]
-  name = "Github"
-  icon = "fa-brands fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/ibs-neuroai-lab"
-
-[[params.social]]
-  name = "Email"
-  icon = "fa-solid fa-envelope fa-2x"
-  weight = 2
-  url = "mailto:contact@neuroai.ibs.re.kr"
-
-[[menu.main]]
-  name = "Home"
-  weight = 1
-  url = "/"
-
 [[menu.main]]
   name = "People"
   weight = 2
   url = "/people/"
 
 [[menu.main]]
-  name = "Research"
+  name = "Open Positions"
   weight = 3
+  url = "/opportunities/"
+
+[[menu.main]]
+  name = "Research"
+  weight = 4
   url = "/research/"
 
 [[menu.main]]
   name = "Publications"
-  weight = 4
-  url = "/publication/"
-
-[[menu.main]]
-  name = "Opportunities"
   weight = 5
-  url = "/opportunities/"
+  url = "/publication/"
 
 [[menu.main]]
   name = "Resources"

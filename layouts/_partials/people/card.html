@@ -1,0 +1,33 @@
+<div class="person-card">
+  <div class="person-left">
+    {{ with .Params.photo }}
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="person-photo">
+    {{ else }}
+    <img src="/images/placeholder.png" alt="{{ .Title }}" class="person-photo">
+    {{ end }}
+    <h3 class="person-name">{{ .Title }}</h3>
+    <ul class="person-social">
+      {{ with .Params.email }}
+      <li><a href="mailto:{{ . }}" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+      {{ end }}
+      {{ with .Params.homepage }}
+      <li><a href="{{ . }}" aria-label="Homepage" target="_blank"><i class="fa-solid fa-globe"></i></a></li>
+      {{ end }}
+      {{ with .Params.linkedin }}
+      <li><a href="{{ . }}" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+      {{ end }}
+      {{ with .Params.twitter }}
+      <li><a href="{{ . }}" aria-label="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+      {{ end }}
+      {{ with .Params.github }}
+      <li><a href="{{ . }}" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+      {{ end }}
+      {{ with .Params.scholar }}
+      <li><a href="{{ . }}" aria-label="Google Scholar" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a></li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="person-right">
+    {{ .Content }}
+  </div>
+</div>

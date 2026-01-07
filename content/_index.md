@@ -1,22 +1,11 @@
 +++
-title = "IBS NeuroAI Lab"
+title = "IBS NeuroAI Group"
 +++
+### Principal Investigator: Sungho Hong
 
-# Welcome to the IBS NeuroAI Lab
+Sungho Hong is a Senior Research Fellow at the Center for Memory and Glioscience, Institute for Basic Science (IBS) and an Adjunct Professor in the Department of Biomedical Engineering at Ulsan National Institute of Science and Technology (UNIST). For more information, see [here]({{< ref "people/_index.md#principal-investigator" >}}).
 
-We are a research group at the **Institute for Basic Science (IBS)** dedicated to understanding the brain through the lens of artificial intelligence and computational neuroscience.
+### Research
 
-## Our Mission
+We are dedicated to understanding the biophysical basis of neural information processing through computational modeling, with particular emphasis on developing neuroscience-inspired machine learning/AI (neuroAI) models to analyze and model neuroscience data. We are big fans of physiological mechanisms and investigate how they collectively define the functions of neural systems underlying intelligent behavior. For our current research projects, see [here]({{< ref "research" >}}).
 
-Our lab investigates the computational principles underlying neural systems, bridging neuroscience and machine learning to advance both fields.
-
-## Research Areas
-
-- **Computational Neuroscience** - Understanding neural computation and brain dynamics
-- **Neural Network Models** - Developing biologically-inspired AI systems
-- **Brain-Machine Interfaces** - Creating next-generation neural interfaces
-- **Learning & Memory** - Computational models of learning and memory formation
-
----
-
-*Interested in joining our lab? Check out our [opportunities](/opportunities/) page!*
