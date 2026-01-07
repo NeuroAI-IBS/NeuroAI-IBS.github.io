@@ -31,6 +31,14 @@
   {{ end }}
   {{ end }}
 
+  {{ $interns := .GetPage "interns" }}
+  {{ if $interns }}
+  <h2>Interns</h2>
+  <div class="alumni-list">
+    {{ $interns.Content }}
+  </div>
+  {{ end }}
+
   {{ $alumni := .GetPage "alumni" }}
   {{ if $alumni }}
   <h2>Alumni</h2>
