@@ -4,14 +4,14 @@ title = "IBS NeuroAI Group"
 theme = "hugo-coder"
 
 [params]
-  author = "Neuroscience-inspired AI Group at IBS"
+  author = "Neuroscience-inspired AI Research Group"
   description = "Institute for Basic Science - NeuroAI Group"
   keywords = "neuroscience,AI,machine learning,computational neuroscience,IBS"
-  info = ""
+  info = "Center for Memory and Glioscience, Institute for Basic Science"
   avatarURL = "images/logo.png"
   dateFormat = "January 2, 2006"
   hideFooter = false
-  hideCredits = false
+  hideCredits = true
   hideCopyright = false
   since = 2024
   enableTwemoji = false
@@ -25,18 +25,6 @@ theme = "hugo-coder"
   category = "categories"
   series = "series"
   tag = "tags"
-
-[[params.social]]
-  name = "Github"
-  icon = "fa-brands fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/ibs-neuroai-lab"
-
-[[params.social]]
-  name = "Email"
-  icon = "fa-solid fa-envelope fa-2x"
-  weight = 2
-  url = "mailto:contact@neuroai.ibs.re.kr"
 
 [[menu.main]]
   name = "People"

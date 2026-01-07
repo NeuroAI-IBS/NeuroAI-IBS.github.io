@@ -1,8 +1,23 @@
+// Consistent site-wide width (100rem)
+$site-width: 95rem;
+
+// Link colors
+$link-highlight: rgb(182, 66, 38);
+$link-base-light: #000;
+
+.container {
+  max-width: $site-width;
+}
+
 .top-banner {
   background-color: white;
   height: 4.5rem;
   display: flex;
   align-items: center;
+}
+
+.top-banner .container {
+  max-width: $site-width;
 }
 
 .navigation {
@@ -45,7 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -30rem;
+  margin-top: 0rem;
 }
 
 .avatar img {
@@ -60,12 +75,109 @@
 
 .content {
   line-height: 1.35;  // Default is usually 1.5-1.6
+
+  // Reduce spacing between headers and body text
+  h1, h2, h3, h4, h5, h6 {
+    margin: 4rem 0 1.5rem 0;  // Theme default: 4rem 0 2.5rem 0
+  }
 }
 
 .about-content {
   text-align: justify;
   max-width: 60rem;
   margin: 2rem auto;
+}
+
+// Hugo-Coder sets `.content { display: flex; }` (row). Wrap homepage into a single flex item.
+.home-stack {
+  width: 100%;
+}
+
+// Ensure hero section has proper spacing
+section.container.centered {
+  margin-bottom: 4rem;
+}
+
+// Two-column layout for home page
+.home-two-column {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  clear: both; // Ensure it appears below floated/flexed content
+  display: block; // Override any flex inheritance
+  width: 100%;
+  max-width: $site-width;
+  font-size: 90%;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 3rem 0 1rem 0 !important;
+  }
+
+  p, ul, ol, table {
+    margin-top: 0.5rem;
+  }
+}
+
+.home-columns {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.home-column-left {
+  flex: 1;
+  min-width: 0; // Allows flex item to shrink below content size
+
+  .about-content {
+    max-width: none;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.home-column-right {
+  flex: 1;
+  min-width: 0;
+
+  .news-content {
+    text-align: left;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th, td {
+        padding: 0.3rem 0.5rem;
+        vertical-align: top;
+        border: none;
+      }
+
+      th:first-child, td:first-child {
+        width: 4rem;
+        white-space: nowrap;
+        font-weight: bold;
+      }
+
+      thead {
+        display: none; // Hide table header
+      }
+    }
+  }
+}
+
+// Align the first heading/content block of both columns to the same top baseline
+.home-column-left .about-content > :first-child,
+.home-column-right .news-content > :first-child {
+  margin-top: 0;
 }
 
 .person-card {
@@ -111,10 +223,11 @@
     color: inherit;
     font-size: 1.6rem;
     opacity: 0.7;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, color 0.1s;
 
     &:hover {
       opacity: 1;
+      color: $link-highlight;
     }
   }
 }
@@ -134,10 +247,6 @@
 }
 
 // Link highlight overrides (hover/click/visited)
-// Requested highlight color: rgb(188,76,62)
-$link-highlight: rgb(182, 66, 38);
-$link-base-light: #000;
-
 // Base (site-wide) link interaction/visited states
 a {
   // Default (unhovered) link color
@@ -145,8 +254,9 @@ a {
   // Reduce hover animation delay (theme default is 0.25s)
   transition: all 0.1s ease-in;
 
-  // Only hover is highlighted
-  &:hover {
+  // Only hover is highlighted (including visited links)
+  &:hover,
+  &:visited:hover {
     color: $link-highlight;
   }
 
@@ -187,7 +297,8 @@ h6 .heading-link,
 .navigation a:hover,
 .content .list ul li .title:hover,
 .centered .about ul li a:hover,
-.float-container a:hover {
+.float-container a:hover,
+a.external-link:hover {
   color: $link-highlight;
 }
 
@@ -235,7 +346,16 @@ body.colorscheme-dark {
     }
   }
 
+  // Navigation stays dark text on light background even in dark mode
   .navigation a,
+  .navigation a:visited {
+    color: $link-base-light;
+  }
+
+  .navigation a:hover {
+    color: $link-highlight;
+  }
+
   .footer a,
   .float-container a,
   .person-social li a,
@@ -248,7 +368,6 @@ body.colorscheme-dark {
   h5 .heading-link,
   h6 .heading-link,
   .title-link,
-  .navigation a:visited,
   .footer a:visited,
   .float-container a:visited,
   .person-social li a:visited,
@@ -258,8 +377,11 @@ body.colorscheme-dark {
   }
 
   .navigation-title,
+  .navigation-title:visited {
+    color: $link-highlight;
+  }
+
   .title-link,
-  .navigation-title:visited,
   .title-link:visited {
     color: $link-highlight;
   }
@@ -276,7 +398,8 @@ body.colorscheme-dark {
   .navigation a:hover,
   .content .list ul li .title:hover,
   .centered .about ul li a:hover,
-  .float-container a:hover {
+  .float-container a:hover,
+  a.external-link:hover {
     color: $link-highlight;
   }
 }
@@ -340,7 +463,8 @@ body.colorscheme-dark {
     .navigation a:hover,
     .content .list ul li .title:hover,
     .centered .about ul li a:hover,
-    .float-container a:hover {
+    .float-container a:hover,
+    a.external-link:hover {
       color: $link-highlight;
     }
   }

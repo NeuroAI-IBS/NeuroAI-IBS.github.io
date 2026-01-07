@@ -143,6 +143,29 @@ After changes, rebuild with `hugo server` to preview.
 
 ---
 
+## Header Spacing
+
+Control the space above and below headings (h1–h6) within content areas.
+
+### Reduce Header-to-Body Gap
+
+Add to `.content` in `assets/scss/custom.scss`:
+
+```scss
+.content {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 2rem 0 1rem 0;  // Theme default: 4rem 0 2.5rem 0
+  }
+}
+```
+
+- First value (`2rem`): space **above** the heading
+- Last value (`1rem`): space **below** the heading (before body text)
+
+Adjust these values as needed, then run `hugo server` to preview.
+
+---
+
 ## Updating Banner Logo Size
 
 Logos in the top banner use the `.banner-logo` class defined in `assets/scss/custom.scss`. Update its `height` to scale all banner logos uniformly while preserving aspect ratios:
