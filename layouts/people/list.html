@@ -17,7 +17,7 @@
 
   {{ $senior := where $people "Params.role" "senior" }}
   {{ if $senior }}
-  <h2>Senior &amp; Postdoctoral Researcher</h2>
+  <h2>Senior &amp; Postdoctoral Researchers</h2>
   {{ range $senior }}
   {{ partial "people/card.html" . }}
   {{ end }}
@@ -33,7 +33,7 @@
 
   {{ $interns := .GetPage "interns" }}
   {{ if $interns }}
-  <h2>Interns</h2>
+  <h2>{{ $interns.Title }}</h2>
   <div class="alumni-list">
     {{ $interns.Content }}
   </div>
@@ -41,7 +41,7 @@
 
   {{ $alumni := .GetPage "alumni" }}
   {{ if $alumni }}
-  <h2>Alumni</h2>
+  <h2>{{ $alumni.Title }}</h2>
   <div class="alumni-list">
     {{ $alumni.Content }}
   </div>
