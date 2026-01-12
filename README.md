@@ -1,2 +1,2 @@
-# ibs-neuroai-lab.github.io
+# NeuroAI-IBS.github.io
 Lab homepage
