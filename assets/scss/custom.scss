@@ -298,6 +298,7 @@ h6 .heading-link,
 .content .list ul li .title:hover,
 .centered .about ul li a:hover,
 .float-container a:hover,
+.person-social li a:hover,
 a.external-link:hover {
   color: $link-highlight;
 }
@@ -399,6 +400,7 @@ body.colorscheme-dark {
   .content .list ul li .title:hover,
   .centered .about ul li a:hover,
   .float-container a:hover,
+  .person-social li a:hover,
   a.external-link:hover {
     color: $link-highlight;
   }
@@ -464,6 +466,7 @@ body.colorscheme-dark {
     .content .list ul li .title:hover,
     .centered .about ul li a:hover,
     .float-container a:hover,
+    .person-social li a:hover,
     a.external-link:hover {
       color: $link-highlight;
     }
