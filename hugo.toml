@@ -1,13 +1,11 @@
 baseURL = "https://NeuroAI-IBS.github.io/"
-languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 title = "IBS NeuroAI Group"
 theme = "hugo-coder"
 
 [params]
-  author = "Neuroscience-inspired AI Research Group"
-  description = "Institute for Basic Science - NeuroAI Group"
   keywords = "neuroscience,AI,machine learning,computational neuroscience,IBS"
-  info = "Center for Memory and Glioscience, Institute for Basic Science"
   avatarURL = "images/logo.png"
   dateFormat = "January 2, 2006"
   hideFooter = false
@@ -26,27 +24,76 @@ theme = "hugo-coder"
   series = "series"
   tag = "tags"
 
-[[menu.main]]
-  name = "People"
-  weight = 2
-  url = "/people/"
+[languages]
 
-[[menu.main]]
-  name = "Open Positions"
-  weight = 3
-  url = "/opportunities/"
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+    title = "IBS NeuroAI Group"
 
-[[menu.main]]
-  name = "Research"
-  weight = 4
-  url = "/research/"
+    [languages.en.params]
+      author = "Neuroscience-inspired AI Research Group"
+      description = "Institute for Basic Science - NeuroAI Group"
+      info = "Center for Memory and Glioscience, Institute for Basic Science"
 
-[[menu.main]]
-  name = "Publications"
-  weight = 5
-  url = "/publication/"
+    [[languages.en.menu.main]]
+      name = "People"
+      weight = 2
+      pageRef = "/people"
 
-[[menu.main]]
-  name = "Resources"
-  weight = 6
-  url = "/resources/"
+    [[languages.en.menu.main]]
+      name = "Open Positions"
+      weight = 3
+      pageRef = "/opportunities"
+
+    [[languages.en.menu.main]]
+      name = "Research"
+      weight = 4
+      pageRef = "/research"
+
+    [[languages.en.menu.main]]
+      name = "Publications"
+      weight = 5
+      pageRef = "/publication"
+
+    [[languages.en.menu.main]]
+      name = "Resources"
+      weight = 6
+      pageRef = "/resources"
+
+  [languages.ko]
+    languageName = "한국어"
+    languageCode = "ko-kr"
+    weight = 2
+    title = "IBS NeuroAI 연구그룹"
+
+    [languages.ko.params]
+      author = "IBS NeuroAI 연구그룹"
+      description = "기초과학연구원 뉴로AI 연구그룹"
+      info = "기억 및 교세포 과학 연구단, 기초과학연구원"
+
+    [[languages.ko.menu.main]]
+      name = "구성원"
+      weight = 2
+      pageRef = "/people"
+
+    [[languages.ko.menu.main]]
+      name = "채용"
+      weight = 3
+      pageRef = "/opportunities"
+
+    [[languages.ko.menu.main]]
+      name = "연구"
+      weight = 4
+      pageRef = "/research"
+
+    [[languages.ko.menu.main]]
+      name = "논문"
+      weight = 5
+      pageRef = "/publication"
+
+    [[languages.ko.menu.main]]
+      name = "자료"
+      weight = 6
+      pageRef = "/resources"

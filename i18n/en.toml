@@ -1,0 +1,12 @@
+[posts]
+other = "News"
+
+[reading_time]
+one = "1 minute read"
+other = "{{ .Count }} minutes read"
+
+[see_also]
+other = "Related reading"
+
+[head_back]
+other = "Return to the <a href=\"{{ . }}\">homepage</a>."

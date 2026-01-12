@@ -143,6 +143,18 @@ After changes, rebuild with `hugo server` to preview.
 
 ---
 
+## Multilingual Content (English/Korean)
+
+1. **Default language:** English files keep their original names (e.g., `content/news.md`). Hugo treats these as `en`.
+2. **Korean copies:** Add a sibling file with the `.ko.md` suffix (e.g., `content/news.ko.md`, `content/opportunities/_index.ko.md`). Front matter can stay the same unless you need localized titles/descriptions.
+3. **Sections:** For list pages, create `content/<section>/_index.ko.md`. Individual biographies or posts can also get `.ko.md` variants when localized copy is ready.
+4. **Navigation text:** Menu labels per language live in `hugo.toml` under `[[languages.<code>.menu.main]]`. Keep URLs using `pageRef` so both languages stay in sync.
+5. **Theme strings:** Override UI labels (e.g., “Posts”, reading time) via `i18n/en.toml` and `i18n/ko.toml`. Only add keys you actually customize—Hugo will fall back to the theme defaults for everything else.
+
+Run `hugo server` and toggle the language switcher in the header to preview both locales.
+
+---
+
 ## Header Spacing
 
 Control the space above and below headings (h1–h6) within content areas.

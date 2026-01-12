@@ -1,0 +1,12 @@
+[posts]
+other = "뉴스"
+
+[reading_time]
+one = "읽는 데 1분"
+other = "읽는 데 {{ .Count }}분"
+
+[see_also]
+other = "함께 보면 좋은 글"
+
+[head_back]
+other = "<a href=\"{{ . }}\">홈</a>으로 돌아가기"
