@@ -209,6 +209,7 @@ h6 .heading-link,
 .content .list ul li .title:hover,
 .centered .about ul li a:hover,
 .float-container a:hover,
+.person-social li a:hover,
 a.external-link:hover {
   color: #b64226; }
 
@@ -283,6 +284,7 @@ body.colorscheme-dark .navigation a:hover,
 body.colorscheme-dark .content .list ul li .title:hover,
 body.colorscheme-dark .centered .about ul li a:hover,
 body.colorscheme-dark .float-container a:hover,
+body.colorscheme-dark .person-social li a:hover,
 body.colorscheme-dark a.external-link:hover {
   color: #b64226; }
 
@@ -327,6 +329,7 @@ body.colorscheme-dark a.external-link:hover {
   body.colorscheme-auto .content .list ul li .title:hover,
   body.colorscheme-auto .centered .about ul li a:hover,
   body.colorscheme-auto .float-container a:hover,
+  body.colorscheme-auto .person-social li a:hover,
   body.colorscheme-auto a.external-link:hover {
     color: #b64226; } }
 

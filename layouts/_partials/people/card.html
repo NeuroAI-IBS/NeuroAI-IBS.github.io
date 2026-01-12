@@ -13,17 +13,17 @@
       {{ with .Params.homepage }}
       <li><a href="{{ . }}" aria-label="Homepage" target="_blank"><i class="fa-solid fa-globe"></i></a></li>
       {{ end }}
+      {{ with .Params.scholar }}
+      <li><a href="{{ . }}" aria-label="Google Scholar" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a></li>
+      {{ end }}
+      {{ with .Params.github }}
+      <li><a href="{{ . }}" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+      {{ end }}
       {{ with .Params.linkedin }}
       <li><a href="{{ . }}" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
       {{ end }}
       {{ with .Params.twitter }}
       <li><a href="{{ . }}" aria-label="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-      {{ end }}
-      {{ with .Params.github }}
-      <li><a href="{{ . }}" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-      {{ end }}
-      {{ with .Params.scholar }}
-      <li><a href="{{ . }}" aria-label="Google Scholar" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a></li>
       {{ end }}
     </ul>
   </div>
