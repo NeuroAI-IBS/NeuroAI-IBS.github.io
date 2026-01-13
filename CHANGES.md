@@ -111,8 +111,6 @@ Added team member profiles:
 
 Added IBS logo to `/static/images/ibs_logo.gif` and configured it in the site header.
 
----## Banner & Documentation Refresh (Dec 2025) ✅
-
-1. Replaced the broken center logo with `static/images/logo_w_CMG.png`, ensured it sits beside the IBS logo, enlarged it via a dedicated `.banner-logo-center` class, and tweaked spacing/offset so the two marks align.
+---## Banner & Documentation Refresh (Dec 2025) ✅1. Replaced the broken center logo with `static/images/logo_w_CMG.png`, ensured it sits beside the IBS logo, enlarged it via a dedicated `.banner-logo-center` class, and tweaked spacing/offset so the two marks align.
 2. Updated the center logo hyperlink to point to `https://www.ibs.re.kr/ccs` (previously targeted an incorrect address).
 3. Added concise banner-maintenance guidance to `docs/QUICK_REFERENCE.md` so future updates to logo sizing/placement are straightforward.

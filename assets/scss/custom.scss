@@ -204,17 +204,20 @@ section.container.centered {
   height: 15rem;
   object-fit: cover;
   border-radius: 50%;
+  margin-bottom: 0.3rem; // Reduced gap between photo and name
 }
 
-.person-name {
-  margin: 1rem 0 0.5rem;
+// More specific selector to override .content h3 styles
+.person-left .person-name,
+.person-card .person-name {
+  margin: 0.5rem 0 0.15rem !important; // Reduced margins: smaller gap after photo and before icons
   font-size: 1.8rem;
 }
 
 .person-social {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0.75rem 0 0 !important; // Reduced gap between name and icons
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -244,6 +247,13 @@ section.container.centered {
 .list .alumni-list ul {
   list-style: disc !important;
   padding-left: 2rem !important;
+}
+
+.section-separator {
+  margin: 4rem 0;
+  border: none;
+  border-top: 1px solid #ddd;
+  width: 100%;
 }
 
 // Link highlight overrides (hover/click/visited)

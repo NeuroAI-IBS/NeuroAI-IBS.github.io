@@ -246,3 +246,130 @@ Use anchored headings plus Hugo's `ref` shortcode to send visitors to an exact s
    ```
 
 3. **Preview** with `hugo server` to confirm the jump scrolls to the intended section.
+
+---
+
+## People Page: Adjusting Spacing Between Photo, Name, and Icons
+
+The people page cards display a photo, name, and social icons. To adjust the gaps between these elements:
+
+**Important:** The theme's `.content h3` styles override simple selectors, so you need to use more specific selectors with `!important` to ensure your changes take effect.
+
+1. **Edit `assets/scss/custom.scss`** and locate the `.person-photo`, `.person-name`, and `.person-social` selectors.
+
+2. **Adjust spacing between photo and name:**
+   - Modify `margin-bottom` in `.person-photo` (currently `0.3rem`)
+   - Modify `margin-top` in `.person-name` (first value in the `margin` shorthand, currently `0.5rem`)
+   - Current total gap: `0.3rem + 0.5rem = 0.8rem`
+
+3. **Adjust spacing between name and icons:**
+   - Modify `margin-bottom` in `.person-name` (third value in the `margin` shorthand, currently `0.15rem`)
+   - Modify `margin-top` in `.person-social` (currently `0.75rem`)
+   - Current total gap: `0.15rem + 0.75rem = 0.9rem`
+
+### Current Implementation
+
+```scss
+.person-photo {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.3rem; // Gap after photo
+}
+
+// More specific selector to override .content h3 styles
+.person-left .person-name,
+.person-card .person-name {
+  margin: 0.5rem 0 0.15rem !important; // Override theme's h3 margin
+  font-size: 1.8rem;
+}
+
+.person-social {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0 !important; // Gap before icons
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+```
+
+### Example: Reduce All Gaps
+
+```scss
+.person-photo {
+  margin-bottom: 0.2rem;  // Reduced gap after photo
+}
+
+.person-left .person-name,
+.person-card .person-name {
+  margin: 0.3rem 0 0.1rem !important;  // Reduced margins
+  font-size: 1.8rem;
+}
+
+.person-social {
+  margin: 0.3rem 0 0 !important;  // Reduced gap before icons
+}
+```
+
+### Example: Increase Gaps
+
+```scss
+.person-photo {
+  margin-bottom: 0.5rem;  // Increased gap after photo
+}
+
+.person-left .person-name,
+.person-card .person-name {
+  margin: 1rem 0 0.5rem !important;  // Increased margins
+  font-size: 1.8rem;
+}
+
+.person-social {
+  margin: 1rem 0 0 !important;  // Increased gap before icons
+}
+```
+
+**Note:** After making changes, restart `hugo server` and hard refresh your browser (`Cmd+Shift+R` on Mac, `Ctrl+Shift+R` on Windows/Linux) to see the updates. The `!important` flags are necessary to override the theme's default h3 styles.
+
+---
+
+## People Page: Section Separator
+
+A horizontal separator appears between the "Undergraduate Interns" and "Alumni" sections on the people page.
+
+### Current Implementation
+
+The separator is added in `layouts/people/list.html` using an `<hr>` element with the class `section-separator`. It only appears if both sections exist.
+
+### Styling the Separator
+
+The separator styling is defined in `assets/scss/custom.scss`:
+
+```scss
+.section-separator {
+  margin: 4rem 0;
+  border: none;
+  border-top: 1px solid #ddd;
+  width: 100%;
+}
+```
+
+### Adjusting the Separator
+
+- **Change spacing:** Modify the `margin` value (currently `4rem 0`)
+- **Change color:** Modify `border-top` color (currently `#ddd`)
+- **Change thickness:** Modify `border-top` width (currently `1px`)
+- **Change style:** Replace `solid` with `dashed`, `dotted`, etc.
+
+### Example: Thicker, Darker Separator
+
+```scss
+.section-separator {
+  margin: 4rem 0;
+  border: none;
+  border-top: 2px solid #999;
+  width: 100%;
+}
+```
