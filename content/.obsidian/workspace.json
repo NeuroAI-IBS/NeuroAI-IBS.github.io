@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "research/_index.md",
+                "file": "opportunities/_index.md",
                 "mode": "source",
                 "source": false
               },
@@ -185,10 +185,11 @@
   },
   "active": "9994731587479f3e",
   "lastOpenFiles": [
+    "research/_index.md",
+    "{{<.md",
     "publication/_index.md",
     "news.md",
     "people/sungho_hong.md",
-    "research/_index.md",
     "research/img",
     "research/untitled folder"
   ]
