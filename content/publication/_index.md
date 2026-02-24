@@ -5,7 +5,7 @@ description = "Our research publications"
 
 ## Journal and Conference Publications:
 
-1. Kwon, J.\*, Kim, S.\*, Woo, J., Tanaka-Yamamoto, K., James, O., De Schutter, E., Hong, S.†, and Lee, C.J.† (2025). Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination, Exp. Mol. Med., _in press_ (\*,†contributed equally). [preprint](https://doi.org/10.1101/2024.05.30.596563)
+1. Kwon, J.\*, Kim, S.\*, Woo, J., Tanaka-Yamamoto, K., James, O., De Schutter, E., Hong, S.†, and Lee, C.J.† (2025). Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination, Exp. Mol. Med., _in press_ (\*,†contributed equally). [link](https://doi.org/10.1038/s12276-026-01657-8)
 
 
 ## Selected Publications before 2024:
