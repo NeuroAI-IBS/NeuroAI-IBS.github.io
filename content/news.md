@@ -9,9 +9,8 @@ draft = false
 
 |Date|  |
 | ---------- | ----------------------------------- |
-| 05/14/2006 | Finally! Our [cerebellar connectome paper](https://www.nature.com/articles/s41593-026-02268-2) is out in Nature Neuroscience!|
-| 05/11/2026 | Sungho's [article](https://theconversation.com/what-happens-when-scientists-trust-ai-more-than-colleagues-281374) about AI companions to scientists is out in [the Conversation](https://theconversation.com/)!|
-| 02/18/2026 | Our [neuro-glia interaction paper](https://www.nature.com/articles/s12276-026-01657-8) is out in _Experimental &amp; Molecular Medicine_! |
+| 05/14/2006 | Finally! Our [cerebellar connectome paper](https://www.nature.com/articles/s41593-026-02268-2) is out in _Nature Neuroscience_.|
+| 05/11/2026 | Sungho's [article](https://theconversation.com/what-happens-when-scientists-trust-ai-more-than-colleagues-281374) about AI companions to scientists is out in _[The Conversation](https://theconversation.com/)_!|
 | 02/18/2026 | Our [neuro-glia interaction paper](https://www.nature.com/articles/s12276-026-01657-8) is out in _Experimental &amp; Molecular Medicine_! |
 | 01/01/2026 | Three interns, Nayeon Kim, Jiseok Ryu, and Jinwoo Jung joined the group.|
 | 12/16/2025 | New [lab website](https://NeuroAI-IBS.github.io/)!|

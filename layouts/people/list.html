@@ -31,8 +31,20 @@
   {{ end }}
   {{ end }}
 
+  {{ $undergradResearchers := where $people "Params.role" "undergrad_researcher" }}
+  {{ if $undergradResearchers }}
+  <h2>Undergraduate Student Researchers</h2>
+  {{ range $undergradResearchers }}
+  {{ partial "people/card.html" . }}
+  {{ end }}
+  {{ end }}
+
   {{ $interns := .GetPage "interns" }}
-  {{ if $interns }}
+  {{ $internsContent := "" }}
+  {{ with $interns }}
+    {{ $internsContent = trim .Content " \n\r\t" }}
+  {{ end }}
+  {{ if and $interns $internsContent }}
   <h2>{{ $interns.Title }}</h2>
   <div class="alumni-list">
     {{ $interns.Content }}
@@ -41,7 +53,7 @@
 
   {{ $alumni := .GetPage "alumni" }}
   {{ if $alumni }}
-  {{ if $interns }}
+  {{ if $internsContent }}
   <hr class="section-separator">
   {{ end }}
   <h2>{{ $alumni.Title }}</h2>
