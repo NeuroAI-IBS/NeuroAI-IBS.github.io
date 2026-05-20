@@ -5,8 +5,12 @@ description = "Our research publications"
 
 ## Journal and Conference Publications:
 
-1. Kwon, J.\*, Kim, S.\*, Woo, J., Tanaka-Yamamoto, K., James, O., De Schutter, E., Hong, S.†, and Lee, C.J.† (2025). Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination, Exp. Mol. Med., _in press_ (\*,†contributed equally). [preprint](https://doi.org/10.1101/2024.05.30.596563)
+1. Park, C.\*, Yang, Z.\*, Nashef, A.\*, Gim, J.\*, Bahn, S.\*, Kim, G.H.\*, Zhang, K.\*, Cathala, L.\*, Hong, S.\*, Im, Y., Lee, S.-H., Lee, K., Kim, M.-S., Arnold, D.B., Lee, K.J.†, Christie, J.M.†, and Kim, J.S.† (2026). Synchronous climbing fiber activity enables instructive signaling for cerebellar learning through modulation of disinhibitory circuits. Nat. Neurosci., in press. (*,†contributed equally) online. DOI:[10.1038/s41593-026-02268-2](https://doi.org/10.1038/s41593-026-02268-2)
+2. Kwon, J.\*, Kim, S.\*, Woo, J., Tanaka-Yamamoto, K., James, O., De Schutter, E., Hong, S.†, and Lee, C.J.† (2025). Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination, Exp. Mol. Med., *58*, 579–590 (\*,†contributed equally). DOI:[10.1038/s12276-026-01657-8](https://doi.org/10.1038/s12276-026-01657-8)
 
+## Contributed articles in media
+
+1. Victor, D.J. and Hong, S. (2026) What happens when scientists trust AI more than colleagues? The Conversation. DOI:[10.64628/AB.3f7mjrmen](https://doi.org/10.64628/AB.3f7mjrmen).
 
 ## Selected Publications before 2024:
 

@@ -52,6 +52,8 @@ Menu items are configured in `hugo.toml` under `[[menu.main]]` entries.
 
 ## Adding People
 
+See [EMAILS.md](EMAILS.md) for how email links are obfuscated on the site and how Open Positions uses a Google Form instead of a public `mailto:` address.
+
 See `content/people/` for examples. Each person needs:
 
 ```toml

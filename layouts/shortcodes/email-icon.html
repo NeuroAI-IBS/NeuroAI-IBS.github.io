@@ -1,1 +1,6 @@
-<a href="mailto:{{ .Get 0 }}" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+{{- $target := .Get 0 -}}
+{{- if or (hasPrefix $target "http://") (hasPrefix $target "https://") -}}
+<a href="{{ $target }}" aria-label="Application form" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i></a>
+{{- else -}}
+{{ partial "email-obfuscated-link.html" $target }}
+{{- end -}}

@@ -19,7 +19,7 @@ theme = "hugo-coder"
   hideColorSchemeToggle = true
   customCSS = []
   customSCSS = ["scss/custom.scss"]
-  customJS = []
+  customJS = ["js/email-obfuscate.js"]
 
 [taxonomies]
   category = "categories"
