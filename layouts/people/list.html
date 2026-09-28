@@ -15,10 +15,10 @@
   {{ end }}
   {{ end }}
 
-  {{ $senior := where $people "Params.role" "senior" }}
-  {{ if $senior }}
+  {{ $researchers := where $people "Params.role" "researcher" }}
+  {{ if $researchers }}
   <h2>Senior &amp; Postdoctoral Researchers</h2>
-  {{ range $senior }}
+  {{ range $researchers }}
   {{ partial "people/card.html" . }}
   {{ end }}
   {{ end }}
@@ -27,14 +27,6 @@
   {{ if $students }}
   <h2>Students</h2>
   {{ range $students }}
-  {{ partial "people/card.html" . }}
-  {{ end }}
-  {{ end }}
-
-  {{ $undergradResearchers := where $people "Params.role" "undergrad_researcher" }}
-  {{ if $undergradResearchers }}
-  <h2>Undergraduate Student Researchers</h2>
-  {{ range $undergradResearchers }}
   {{ partial "people/card.html" . }}
   {{ end }}
   {{ end }}
