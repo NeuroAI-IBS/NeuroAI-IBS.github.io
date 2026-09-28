@@ -146,6 +146,11 @@ section.container.centered {
   .news-content {
     text-align: left;
 
+    // Theme sets a { font-weight: 500 }; force bold only on this callout
+    .news-hiring a {
+      font-weight: 700;
+    }
+
     ul {
       list-style: none;
       padding-left: 0;
