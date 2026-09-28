@@ -5,8 +5,9 @@ description = "Our research publications"
 
 ## Journal and Conference Publications:
 
-1. Park, C.\*, Yang, Z.\*, Nashef, A.\*, Gim, J.\*, Bahn, S.\*, Kim, G.H.\*, Zhang, K.\*, Cathala, L.\*, Hong, S.\*, Im, Y., Lee, S.-H., Lee, K., Kim, M.-S., Arnold, D.B., Lee, K.J.†, Christie, J.M.†, and Kim, J.S.† (2026). Synchronous climbing fiber activity enables instructive signaling for cerebellar learning through modulation of disinhibitory circuits. Nat. Neurosci., in press. (*,†contributed equally) online. DOI:[10.1038/s41593-026-02268-2](https://doi.org/10.1038/s41593-026-02268-2)
-2. Kwon, J.\*, Kim, S.\*, Woo, J., Tanaka-Yamamoto, K., James, O., De Schutter, E., Hong, S.†, and Lee, C.J.† (2025). Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination, Exp. Mol. Med., *58*, 579–590 (\*,†contributed equally). DOI:[10.1038/s12276-026-01657-8](https://doi.org/10.1038/s12276-026-01657-8)
+1. James, O. and Hong. S. (2026) Container-based framework for large-scale spiking network simulation. Front. Neurosci., *20*, 1893064. DOI:[10.3389/fnins.2026.1893064](https://doi.org/10.3389/fnins.2026.1893064)
+2. Park, C.\*, Yang, Z.\*, Nashef, A.\*, Gim, J.\*, Bahn, S.\*, Kim, G.H.\*, Zhang, K.\*, Cathala, L.\*, Hong, S.\*, Im, Y., Lee, S.-H., Lee, K., Kim, M.-S., Arnold, D.B., Lee, K.J.†, Christie, J.M.†, and Kim, J.S.† (2026). Synchronous climbing fiber activity enables instructive signaling for cerebellar learning through modulation of disinhibitory circuits. Nat. Neurosci., *29*, 1425-38. (*,†contributed equally). DOI:[10.1038/s41593-026-02268-2](https://doi.org/10.1038/s41593-026-02268-2)
+3. Kwon, J.\*, Kim, S.\*, Woo, J., Tanaka-Yamamoto, K., James, O., De Schutter, E., Hong, S.†, and Lee, C.J.† (2025). Cerebellar tonic inhibition orchestrates the maturation of information processing and motor coordination, Exp. Mol. Med., *58*, 579–590 (\*,†contributed equally). DOI:[10.1038/s12276-026-01657-8](https://doi.org/10.1038/s12276-026-01657-8)
 
 ## Contributed articles in media
 

@@ -9,6 +9,7 @@ draft = false
 
 |Date|  |
 | ---------- | ----------------------------------- |
+| 09/09/2026 | Oliver's paper on the [container-based framework for large-scale spiking network models](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1893064) is out in _Frontiers in Neuroscience_!|
 | 05/14/2026 | Finally! Our [cerebellar connectome paper](https://www.nature.com/articles/s41593-026-02268-2) is out in _Nature Neuroscience_.|
 | 05/11/2026 | Sungho's [article](https://theconversation.com/what-happens-when-scientists-trust-ai-more-than-colleagues-281374) about AI companions to scientists is out in _[The Conversation](https://theconversation.com/)_!|
 | 02/18/2026 | Our [neuro-glia interaction paper](https://www.nature.com/articles/s12276-026-01657-8) is out in _Experimental &amp; Molecular Medicine_! |
